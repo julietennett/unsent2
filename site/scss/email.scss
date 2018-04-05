@@ -2,9 +2,10 @@ body {
   margin:0;
   padding:0;
   overflow: hidden;
-  background-color: #E9E4E9;
+  background-color: $c-background;
   font-family: $f-rubik;
-  font-weight: 300;
+  font-weight: $fw-light;
+  color: $c-black;
 }
 
 .email-window__container {
@@ -20,7 +21,7 @@ body {
 .email-window {
   width: 50%;
   height: auto;
-  box-shadow: 0 2px 24px 0 #A79FA7;
+  box-shadow: 0 2px 24px 0 $c-background--shadow;
 }
 
 .email__container {
@@ -46,11 +47,11 @@ body {
   margin: 10px 20px;
   font-weight: 500;
   font-size: 12pt;
-  color: #fff;
-  background-color: #BDAFC7;
+  color: $c-white;
+  background-color: $c-buttons;
   border-radius: 7px;
   border: none;
-  box-shadow: 0 2px 7px 0 #CAC2D1;
+  box-shadow: 0 2px 7px 0 $c-buttons--shadow;
   cursor: pointer;
 }
 
@@ -61,16 +62,15 @@ body {
 }
 
 .input {
-  background-color: #fff;
+  background-color: $c-white;
   padding: 10px;
   border-radius: 5px;
-  border: solid .5px #95889E;
+  border: solid .5px $c-input;
   margin-bottom: 5px;
 }
 
 .input-text {
   font-size: 10pt;
-  color: #4A4A4A;
 }
 
 .email-text__container {
