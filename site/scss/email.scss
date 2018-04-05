@@ -1,3 +1,80 @@
 body {
-  color: purple;
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  background-color: #E9E4E9;
+  font-family: $f-rubik;
+  font-weight: 300;
+}
+
+.email-window__container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+.email-window {
+  width: 50%;
+  height: auto;
+  box-shadow: 0 2px 24px 0 #A79FA7;
+}
+
+.email__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.email-content__container {
+  width: 50%;
+  height: 55%;
+}
+
+.email-controls__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.send {
+  width: 15%;
+  margin: 10px 20px;
+  font-weight: 500;
+  font-size: 12pt;
+  color: #fff;
+  background-color: #BDAFC7;
+  border-radius: 7px;
+  border: none;
+  box-shadow: 0 2px 7px 0 #CAC2D1;
+  cursor: pointer;
+}
+
+.input__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid .5px #95889E;
+  margin-bottom: 5px;
+}
+
+.input-text {
+  font-size: 10pt;
+  color: #4A4A4A;
+}
+
+.email-text__container {
+  height: 89%;
+  overflow: scroll;
+  padding: 0 25px;
 }
