@@ -1,0 +1,19 @@
+{
+  "name": "unsent",
+  "version": "1.0.0",
+  "description": "senior honors project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "p5": "^0.6.0",
+    "typed.js": "^2.0.6"
+  },
+  "devDependencies": {
+    "gulp-sass": "^4.0.0"
+  }
+}
