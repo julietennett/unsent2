@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 55vw;
+  width: 53vw;
   height: 65vh;
   background-color: $c-white;
   border-radius: 6px;
@@ -95,7 +95,8 @@
 .controls__input--container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  margin: 5px 0; 
 }
 
 .controls__input {
@@ -103,7 +104,6 @@
   padding: 10px;
   border-radius: 5px;
   border: solid .5px $c-input;
-  margin-bottom: 5px;
 }
 
 .controls__input--text {
