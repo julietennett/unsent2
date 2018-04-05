@@ -84,11 +84,14 @@
   color: $c-white;
   font-size: 10pt;
   font-weight: $fw-bold;
-  cursor: pointer;
 
   &:first-child {
     margin-left: 0;
   }
+}
+
+.draft {
+  cursor: pointer;
 }
 
 .button__hover-msg {
