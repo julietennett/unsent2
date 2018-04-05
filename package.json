@@ -4,16 +4,16 @@
   "description": "senior honors project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel site/index.html"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "gulp": "^3.9.1",
+    "node-sass": "^4.8.3",
     "p5": "^0.6.0",
+    "parcel-bundler": "^1.7.0",
     "typed.js": "^2.0.6"
   },
-  "devDependencies": {
-    "gulp-sass": "^4.0.0"
-  }
+  "devDependencies": {}
 }
