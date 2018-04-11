@@ -54,6 +54,7 @@ function buttonHover() {
 function newEmail() {
   let $draftButton = $('.draft');
   let $emailContainer = $('.email-text__container');
+  let $draftMsg = $('.msg-draft');
 
   let $emailText = [
     "I found myself in the park tonight surrounded by a crowd of people. There were people everywhere, coming together to sing and chant and cheer, a sense of comraderie and excitement everyone could feel. Amidst all of the chaos in the park, you were the farthest thing from my mind, but then I looked over to my side and somehow you were there. \n \n You were actually there! How did you manage to find the one spot next to mine? For a moment, my mind flashed to the time when I believed the universe pulled your atoms towards mine, with some sort of cosmic attraction (those are words I actually thought in my mind, can you believe that?) /n The last time we were in that park together, it was summertime. We laid in the grass, allowing the sunshine to hit our faces until we both had sunburns. I wrote about it in my journal that night and I said I could've lived in that moment forever. \n \n I looked over again and you and your friends had moved further into the crowd, out of my sight. ",
@@ -62,10 +63,17 @@ function newEmail() {
     "It's been approximately 4 months since we last spoke before today. 4 months of silence, and even then there was 4 more months before that. And it's been almost a year since you last got VIP access to my thoughts. And yet, I sat down at the table today with the two friends we could both do a better job staying in touch with. I had a coffee in my hand and the first thing you said was 'I thought you stopped drinking coffee!' \n \n It's been one year since I've told you I stopped drinking coffee. But you remembered that afternoon conversation, laying in the grass. You must not have realized I went on that melodramatic anti-coffee rant knowing I would only last in my abstention for maybe a month. But you weren't around a month later to find out. You thought I was more dedicated to the coffeeless cause. And you remembered that. \n \n Just so you know, I drink coffee again. ",
     "'I'm over it', you know. We still don't speak and I'm over it. You'll never know what I had to say and I'm over it. I'm dating a girl now, and she makes me happy and I lie in bed next to her and she doesn't know I still draft emails to you in my head. \n \n I'm over it."
   ];
+  let $draftMsgText = [
+    "you missed your chance",
+    "it's not worth it",
+    "it's too late",
+    "forget it"
+  ]
   var emailNum = 0;
 
   $draftButton.click( function() {
     $emailContainer.children('p').text($emailText[emailNum]);
+    $draftMsg.text($draftMsgText[emailNum]);
     emailNum++;
   });
 
