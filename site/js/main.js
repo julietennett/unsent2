@@ -8,24 +8,48 @@ $(document).ready(function() {
 });
 
 function buttonHover() {
-  let $sendButton = $('.send');
   let $draftButton = $('.draft');
-  let $sendMsg = $('.msg-send');
   let $draftMsg = $('.msg-draft');
+  let $sendButton = $('.send');
+  let $sendMsg = $('.msg-send');
 
-  $sendButton.on("mouseenter", function () {
-    $sendMsg.removeClass('js-hide');
+  $draftButton.hover(
+    function () {
+      $draftMsg.removeClass('js-hide');
+    },
+    function () {
+      $draftMsg.addClass('js-hide');
+    }
+  );
+
+  $draftButton.mousemove( function(evt) {
+    let xPos = evt.pageX;
+    let yPos = evt.pageY;
+
+    $draftMsg.css("left", xPos + 5);
+    $draftMsg.css("top", yPos + 5);
   });
-  $sendButton.on("mouseleave", function () {
-    $sendMsg.addClass('js-hide');
+
+
+  $sendButton.hover(
+    function () {
+      $sendMsg.removeClass('js-hide');
+    },
+    function () {
+      $sendMsg.addClass('js-hide');
+    }
+  );
+
+  $sendButton.mousemove( function(evt) {
+    let xPos = evt.pageX;
+    let yPos = evt.pageY;
+
+    $sendMsg.css("left", xPos + 5);
+    $sendMsg.css("top", yPos + 5);
   });
-  $draftButton.on("mouseenter", function () {
-    $draftMsg.removeClass('js-hide');
-  });
-  $draftButton.on("mouseleave", function () {
-    $draftMsg.addClass('js-hide');
-  });
+
 }
+
 
 function newEmail() {
   let $draftButton = $('.draft');

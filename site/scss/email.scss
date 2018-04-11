@@ -95,20 +95,12 @@
 }
 
 .button__hover-msg {
-  position: absolute;
+  position: fixed;
   padding: 5px 10px;
   background-color: $c-white;
   color: $c-buttons;
   box-shadow: 0 2px 5px $c-black;
   font-size: 10pt;
-
-  &:first-child {
-    left: 400px;
-  }
-
-  &:nth-of-type(2) {
-    left: 500px;
-  }
 }
 
 .js-hide {
