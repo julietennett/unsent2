@@ -44,8 +44,8 @@ function buttonHover() {
     let xPos = evt.pageX;
     let yPos = evt.pageY;
 
-    $sendMsg.css("left", xPos + 5);
-    $sendMsg.css("top", yPos + 5);
+    $sendMsg.css("left", xPos + 12);
+    $sendMsg.css("top", yPos + 10);
   });
 
 }

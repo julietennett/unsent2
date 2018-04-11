@@ -94,6 +94,10 @@
   cursor: pointer;
 }
 
+.send {
+  cursor: not-allowed;
+}
+
 .button__hover-msg {
   position: fixed;
   padding: 5px 10px;
