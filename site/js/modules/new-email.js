@@ -4,11 +4,9 @@ import TypeIt from 'typeit';
 class NewEmail {
   constructor() {
     this.changeText();
-    this.email1();
-
    }
 
-  email1() {
+  changeText() {
     let $draftButton = $('.draft');
     let $emailContainer = $('.email-text__container');
     let emailTextContainer = '.email-text__container p';
@@ -119,27 +117,6 @@ class NewEmail {
 
   email2() {
 
-  }
-
-
-
-  changeText() {
-    let $draftButton = $('.draft');
-    let $draftMsg = $('.msg-draft');
-
-    let draftMsgText = [
-      "yeah, maybe later...",
-      "you missed your chance",
-      "it's not worth it",
-      "it's too late",
-      "just forget it"
-    ]
-    let hoverNum = 1;
-
-    $draftButton.click( function() {
-      $draftMsg.text(draftMsgText[hoverNum]);
-      hoverNum++;
-    });
   }
 }
 
