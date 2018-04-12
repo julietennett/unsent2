@@ -7,7 +7,7 @@ class NewEmail {
    }
 
   changeText() {
-    let $draftButton = $('.draft');
+    let $draftButton = $('.draft-button');
     let $emailContainer = $('.email-text__container');
     let emailTextContainer = '.email-text__container p';
     let $draftMsg = $('.msg-draft');

@@ -7,9 +7,9 @@ class HoverMessage {
    }
 
   buttonHover() {
-    let $draftButton = $('.draft');
+    let $draftButton = $('.draft-button');
     let $draftMsg = $('.msg-draft');
-    let $sendButton = $('.send');
+    let $sendButton = $('.send-button');
     let $sendMsg = $('.msg-send');
 
     $draftButton.hover(
@@ -49,7 +49,7 @@ class HoverMessage {
   }
 
   changeText() {
-    let $draftButton = $('.draft');
+    let $draftButton = $('.draft-button');
     let $draftMsg = $('.msg-draft');
 
     let draftMsgText = [
