@@ -9,7 +9,7 @@ class NewEmail {
   changeText() {
     let $draftButton = $('.draft-button');
     let $emailContainer = $('.email-text__container');
-    let emailTextContainer = '.email-text__container p';
+    let emailTextContainer = '.live-type';
     let $draftMsg = $('.msg-draft');
     var instance = new TypeIt(emailTextContainer, {
       speed: 10

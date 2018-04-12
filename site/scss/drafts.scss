@@ -13,4 +13,12 @@
 .draft__img {
   width: 50%;
   height: auto;
+  cursor: pointer;
+}
+
+.email1 {
+  display: none;
+  opacity: 0;
+  transform: translateY(10);
+  transition: all .3s ease;
 }
