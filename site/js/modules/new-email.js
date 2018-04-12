@@ -55,7 +55,7 @@ class NewEmail {
     $draftButton.click( function() {
       instance.reset();
       if (emailNum == 1) {
-          instance.type('I found myself in the park tonight surrounded by a crowd of people. ')
+        instance.type('I found myself in the park tonight surrounded by a crowd of people. ')
           .pause(800)
           .type('There were people everywhere, coming together to sing and chant and cheer, a sense of comraderie and excitement everyone could feel. Amidst all of the chaos in the park, you were the farthest thing from my mind, but then I looked over to my side and somehow you were there. ')
           .pause(800)
@@ -71,7 +71,47 @@ class NewEmail {
           .pause(800)
           .type('I wrote about it in my journal that night and I said I could\'ve lived in that moment forever. ')
           .pause(1000);
-      }
+      } else if (emailNum == 2) {
+        instance.type('I saw you ride by me on a bike I\'ve never seen before. I had to squint to tell if it was you, but you looked away before I could figure it out. ')
+          .pause(800)
+          .type('As I walked to class I started to rehearse all of the things I never got to say. I could finally yell, louder and louder as the retorts I knew you would have spat at me rung through my head. And my chest felt tight as I sat in my chair. ')
+          .pause(1000)
+          .type('The lecture began and I couldn\'t hear us anymore.');
+      } else if (emailNum == 3) {
+        instance.type('I remembered the last time I saw you drunk tonight as I watched you flirt with a girl across the bar. That time, a whole year ago (or has it been longer?), you insisted you needed me next to you, and you wouldn\'t stop until I crossed the livingroom and took a seat beside you. I was the only thing you needed, you said. ')
+          .pause(800)
+          .type('You didn\'t see me at the bar tonight but the next time I turned my head you were standing next to me and your lips were on hers.');
+      } else if (emailNum == 4) {
+        instance.type('It\'s been approximately 4 months since we last spoke before today. ')
+          .pause(800)
+          .type('4 months of silence, and 4 more months before that. ')
+          .pause(800)
+          .type('And it\'s been almost a year since you last got VIP access to my thoughts. ')
+          .pause(800)
+          .type('And yet, I sat down at the table today with the two friends we could both do a better job staying in touch with. I had a coffee in my hand and the first thing you said was \"I thought you stopped drinking coffee!\"')
+          .break()
+          .break()
+          .pause(800)
+          .type('It\'s been one year since I told you I stopped drinking coffee. But you remembered that afternoon conversation. And you didn\'t realized I went on that melodramatic anti-coffee rant knowing I would only last in my coffee abstention for maybe a month. But you weren\'t around a month later to find out. You thought I was more dedicated to the coffeeless cause. ')
+          .pause(800)
+          .type('And you remembered.');
+      } else if (emailNum == 5) {
+        instance.type('\"I\'m over it\", you know. ')
+        .pause(800)
+        .type('We still don\'t speak and I\'m over it. ')
+        .pause(800)
+        .type('You\'ll never know what I had to say and I\'m over it. ')
+        .pause(800)
+        .type('I\'m so over it, I\'m even dating someone new now. And we\'re happy. And she doesn\'t know that I still draft emails to you in my head. ')
+        .break()
+        .break()
+        .pause(1000)
+        .type('But I\'m over it. ')
+        .break()
+        .break()
+        .pause(1000)
+        .type('I\'m over it. ');
+      };
       emailNum++;
     });
 
