@@ -110,6 +110,11 @@ button {
   border: none;
 }
 
+button:focus {
+  outline:0;
+}
+
+
 ul {
   margin: 0;
 }

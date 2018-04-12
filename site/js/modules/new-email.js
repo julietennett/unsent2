@@ -125,8 +125,6 @@ class NewEmail {
 
   changeText() {
     let $draftButton = $('.draft');
-    let $emailContainer = $('.email-text__container');
-    let emailTextContainer = '.email-text__container p';
     let $draftMsg = $('.msg-draft');
 
     let draftMsgText = [
@@ -134,13 +132,13 @@ class NewEmail {
       "you missed your chance",
       "it's not worth it",
       "it's too late",
-      "forget it"
+      "just forget it"
     ]
-    var emailNum = 1;
+    let hoverNum = 1;
 
     $draftButton.click( function() {
-      $draftMsg.text(draftMsgText[emailNum]);
-      emailNum++;
+      $draftMsg.text(draftMsgText[hoverNum]);
+      hoverNum++;
     });
   }
 }
