@@ -14,7 +14,8 @@
     "node-sass": "^4.8.3",
     "p5": "^0.6.0",
     "parcel-bundler": "^1.7.0",
-    "typed.js": "^2.0.6"
+    "typed.js": "^2.0.6",
+    "typeit": "^5.8.0"
   },
   "devDependencies": {}
 }

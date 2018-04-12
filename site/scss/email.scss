@@ -2,8 +2,6 @@
 .email__container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 53vw;
   height: 65vh;
   background-color: $c-white;
@@ -134,8 +132,14 @@
 /////////////////TEXT
 
 .email-text__container {
+  display: flex;
+  align-content: left;
   height: 89%;
   overflow: scroll;
   margin: 20px 0;
   padding: 0 5%;
+}
+
+p {
+  text-align: left;
 }
