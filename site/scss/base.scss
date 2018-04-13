@@ -119,8 +119,14 @@ ul {
   margin: 0;
 }
 
+h1 {
+  font-weight: 500;
+  color: $c-purple-text;
+  font-size: 40px;
+}
+
 h3 {
-  color: $c-draft;
+  color: $c-purple-text;
 }
 
 p {

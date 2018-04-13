@@ -1,0 +1,27 @@
+.lander__container {
+  position: relative;
+  margin-left: 10%;
+  width: 100%;
+  display: block;
+  transition: all .3s ease;
+}
+
+.new-email-button {
+  background-color: $c-buttons;
+  padding: 15px 40px;
+  border-radius: 5px;
+  color: $c-white;
+  font-weight: 700;
+  font-size: 10pt;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.new-email-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 2px 12px #CAC2D1;
+}
+
+.js-hide-lander {
+  display: none;
+}

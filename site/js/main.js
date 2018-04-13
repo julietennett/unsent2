@@ -3,10 +3,11 @@ import $ from "jquery";
 import NextEmail from "./modules/new-email";
 import HoverMessage from "./modules/hover-message";
 import Draft from "./modules/draft";
-
+import Lander from "./modules/lander";
 
 $(document).ready(function() {
   new NextEmail();
   new HoverMessage();
   new Draft();
+  new Lander();
 });
