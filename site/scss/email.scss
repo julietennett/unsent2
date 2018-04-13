@@ -7,12 +7,10 @@
   background-color: $c-white;
   border-radius: 6px;
   box-shadow: 0 2px 24px $c-background--shadow;
-  transform: scale(100);
-  transform: translateY(0);
+  transition: transform .3s ease;
 }
 
 .hide-email {
-  transform: scale(70);
   transform: translateY(100vh);
 }
 
