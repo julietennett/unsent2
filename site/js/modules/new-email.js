@@ -1,7 +1,7 @@
 import $ from "jquery";
 import TypeIt from 'typeit';
 
-class NewEmail {
+class NextEmail {
   constructor() {
     this.changeText();
    }
@@ -11,6 +11,7 @@ class NewEmail {
     let $emailContainer = $('.email-text__container');
     let emailTextContainer = '.live-type';
     let $draftMsg = $('.msg-draft');
+    let $draftButtons = $('.drafts__container')
     var instance = new TypeIt(emailTextContainer, {
       speed: 10
     });
@@ -94,6 +95,7 @@ class NewEmail {
           .pause(800)
           .type('And you remembered.');
       } else if (emailNum == 5) {
+        $draftButtons.removeClass('hide-drafts');
         instance.type('\"I\'m over it\", you know. ')
         .pause(800)
         .type('We still don\'t speak and I\'m over it. ')
@@ -115,9 +117,6 @@ class NewEmail {
 
   };
 
-  email2() {
-
-  }
 }
 
-export default NewEmail;
+export default NextEmail;

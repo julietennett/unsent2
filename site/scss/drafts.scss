@@ -8,6 +8,12 @@
   left: 0;
   padding: 65px 20px;
   height: 100vh;
+  transform: translateX(0);
+  transition: transform .3s ease;
+}
+
+.hide-drafts {
+  transform: translateX(-100vw);
 }
 
 .draft__img {
