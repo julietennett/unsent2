@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  align-self: flex-end;
+  padding: 15px 40px;
+  font-size: 10pt;
+  color: $c-purple-text;
+}
+
+.credit {
+  color: #807380;
+}

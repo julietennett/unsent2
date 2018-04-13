@@ -26,6 +26,12 @@ body {
   font-family: $f-rubik;
   font-weight: $fw-light;
   color: $c-black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content__container {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -131,6 +137,10 @@ h3 {
 
 p {
   margin: 0;
+}
+
+a {
+  border-bottom: 1px solid $c-purple-text;
 }
 
 
