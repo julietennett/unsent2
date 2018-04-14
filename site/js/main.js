@@ -4,12 +4,12 @@ import NextEmail from "./modules/new-email";
 import HoverMessage from "./modules/hover-message";
 import Draft from "./modules/draft";
 import Lander from "./modules/lander";
-import p5 from "p5";
+import Sketch from "./modules/background";
 
 $(document).ready(function() {
   new NextEmail();
   new HoverMessage();
   new Draft();
   new Lander();
-  console.log('butt');
+  new p5(Sketch);
 });
