@@ -18,7 +18,12 @@ var howlBoolean;
 var sunBoolean;
 
 ////////////RESTAURANT ASSETS
-
+var restColor = ('#282647');
+var stars;
+var lights;
+var lightsX;
+var wall;
+var wallX;
 
 ////////////PARK ASSETS
 
@@ -35,6 +40,11 @@ var lightL;
 var lightLX;
 var lightR;
 var lightRX;
+//RESTAURANT IMG PATHS
+const starsImg = require('../../assets/restaurant/stars.png');
+const lightsImg = require('../../assets/restaurant/lights.png');
+const wallImg = require('../../assets/restaurant/wall.png');
+//HOWL IMG PATHS
 const bricksImg = require('../../assets/howl/bricks.png');
 const discoImg = require('../../assets/howl/discoball.png');
 const lightLImg = require('../../assets/howl/light-left.png');
@@ -52,6 +62,10 @@ const Sketch = function(p5) {
     cloudsBG = p5.loadImage(clouds);
     howlBG = p5.loadImage(howl);
     sunBG = p5.loadImage(sun);
+    //RESTAURANT IMAGES
+    stars = p5.loadImage(starsImg);
+    lights = p5.loadImage(lightsImg);
+    wall = p5.loadImage(wallImg);
     //HOWL IMAGES
     bricks = p5.loadImage(bricksImg);
     disco = p5.loadImage(discoImg);
@@ -63,12 +77,18 @@ const Sketch = function(p5) {
   /////////////////////////////SETUP
   p5.setup = () => {
     p5.createCanvas(p5.windowWidth, p5.windowHeight)
+    //BOOLEANS
     restBoolean = false;
     parkBoolean = false;
     cloudsBoolean = false;
     howlBoolean = false;
     sunBoolean = false;
 
+    //RESTAURANT POS
+    lightsX = -lights.width;
+    wallX = p5.windowWidth + wall.width;
+
+    //HOWL POS
     lightLX = 0 - lightL.width;
     lightRX = p5.windowWidth;
     discoY = 0 - disco.height;
@@ -81,6 +101,22 @@ const Sketch = function(p5) {
     let $draftButton = $('.draft-button');
     let bgNum = 0;
 
+    //////RESTAURANT DRAW
+    if (restBoolean == true) {
+      p5.push();
+      p5.background(restColor);
+      p5.imageMode(p5.CENTER);
+      p5.image(stars, p5.windowWidth/2, p5.windowHeight/2, 1304, 626);
+      p5.image(lights, lightsX, lights.height/2, 1500, 85);
+      p5.image(wall, wallX, p5.windowHeight - wall.height/2, 1500, 231);
+      if (lightsX <= p5.windowWidth/2) {
+        lightsX += 60;
+      };
+      if (wallX >= p5.windowWidth/2) {
+        wallX -= 60;
+      };
+      p5.pop();
+    }
 
     //////HOWL DRAW
     if (howlBoolean == true) {
@@ -106,6 +142,7 @@ const Sketch = function(p5) {
     }
 
     $newEmail.click(function () {
+      restBoolean = true;
       bgNum += 1;
     });
     $draftButton.click( function() {
@@ -113,7 +150,7 @@ const Sketch = function(p5) {
         p5.background(250);
         p5.image(parkBG, 0, 0, p5.windowWidth, p5.windowHeight);
         bgNum += 1;
-        howlBoolean = false;
+        restBoolean = false;
       } else if (bgNum == 2) {
         p5.background(250);
         p5.image(cloudsBG, 0, 0, p5.windowWidth, p5.windowHeight);
@@ -122,6 +159,7 @@ const Sketch = function(p5) {
         howlBoolean = true;
         bgNum += 1;
       } else if (bgNum == 4) {
+        howlBoolean = false;
         p5.background(250);
         p5.image(sunBG, 0, 0, p5.windowWidth, p5.windowHeight);
         bgNum += 1;
