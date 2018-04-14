@@ -31,6 +31,15 @@ body {
   flex-direction: column;
 }
 
+.body__bg {
+  background-size: cover;
+}
+
+.js-bg-show {
+  opacity: 1;
+  transition: opacity .3s ease;
+}
+
 .content__container {
   width: 100vw;
   height: 100vh;
