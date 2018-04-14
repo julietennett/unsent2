@@ -10,6 +10,18 @@ var cloudsBG;
 var howlBG;
 var sunBG;
 
+//HOWL assets
+var howlColor = ('#272D34');
+var bricks;
+var disco;
+var lightL;
+var lightR;
+const bricksImg = require('../../assets/howl/bricks.png');
+const discoImg = require('../../assets/howl/discoball.png');
+const lightLImg = require('../../assets/howl/light-left.png');
+const lightRImg = require('../../assets/howl/light-right.png');
+
+
 const Sketch = function(p5) {
     p5.preload = () => {
       restaurantBG = p5.loadImage(restaurant);
@@ -17,6 +29,11 @@ const Sketch = function(p5) {
       cloudsBG = p5.loadImage(clouds);
       howlBG = p5.loadImage(howl);
       sunBG = p5.loadImage(sun);
+      //HOWL IMAGES
+      bricks = p5.loadImage(bricksImg);
+      disco = p5.loadImage(discoImg);
+      lightL = p5.loadImage(lightLImg);
+      lightR = p5.loadImage(lightRImg);
     };
     p5.setup = () => {
       p5.createCanvas(p5.windowWidth, p5.windowHeight)
@@ -27,9 +44,17 @@ const Sketch = function(p5) {
       let bgNum = 0;
 
       $newEmail.click(function () {
-        p5.background(0);
-        p5.image(restaurantBG, 0, 0, p5.windowWidth, p5.windowHeight);
+        p5.push();
+        p5.imageMode(p5.CENTER);
+        p5.background(howlColor);
+        p5.image(bricks, p5.windowWidth/2, p5.windowHeight/2, 1396, 701);
+        p5.image(disco, p5.windowWidth/2, 75, 225, 162);
+        p5.pop();
+        p5.push();
+        p5.image(lightL, p5.windowWidth/10, 0, 511, 627);
+        p5.image(lightR, p5.windowWidth*(7/8) - lightR.width, 0, 511, 672);
         bgNum += 1;
+        p5.pop();
       });
       $draftButton.click( function() {
         if (bgNum == 1) {
