@@ -49,9 +49,7 @@ const Sketch = function(p5) {
           p5.image(sunBG, 0, 0, p5.windowWidth, p5.windowHeight);
           bgNum += 1;
         } else if (bgNum == 5) {
-          p5.background(250);
-          p5.image(cloudsBG, 0, 0, p5.windowWidth, p5.windowHeight);
-          bgNum += 1;
+          p5.background(233, 228, 233);
         }
       });
     };
