@@ -4,10 +4,7 @@ const park = require('../../assets/background_park.png');
 const clouds = require('../../assets/background_clouds.png');
 const howl = require('../../assets/background_howl.png');
 const sun = require('../../assets/background_sun.png');
-var restaurantBG;
-var parkBG;
 var cloudsBG;
-var howlBG;
 var sunBG;
 
 ////////////BACKGROUND BOOLEANS
@@ -26,7 +23,12 @@ var wall;
 var wallX;
 
 ////////////PARK ASSETS
-
+var parkColor = ('#132437');
+var parkBG;
+var parkStars;
+var lampostL;
+var lampostM;
+var lampostR;
 
 ////////////CLOUDS ASSETS
 
@@ -44,6 +46,12 @@ var lightRX;
 const starsImg = require('../../assets/restaurant/stars.png');
 const lightsImg = require('../../assets/restaurant/lights.png');
 const wallImg = require('../../assets/restaurant/wall.png');
+//PARK IMG PATHS
+const parkBGImg = require('../../assets/park/skyBG.png');
+const parkStarsImg = require('../../assets/park/park-stars.png');
+const lampostLImg = require('../../assets/park/lamp-post.png');
+const lampostMImg = require('../../assets/park/lamp-post.png');
+const lampostRImg = require('../../assets/park/lamp-post.png');
 //HOWL IMG PATHS
 const bricksImg = require('../../assets/howl/bricks.png');
 const discoImg = require('../../assets/howl/discoball.png');
@@ -57,15 +65,18 @@ const Sketch = function(p5) {
 
   /////////////////////////////PRELOAD IMAGES
   p5.preload = () => {
-    restaurantBG = p5.loadImage(restaurant);
-    parkBG = p5.loadImage(park);
     cloudsBG = p5.loadImage(clouds);
-    howlBG = p5.loadImage(howl);
     sunBG = p5.loadImage(sun);
     //RESTAURANT IMAGES
     stars = p5.loadImage(starsImg);
     lights = p5.loadImage(lightsImg);
     wall = p5.loadImage(wallImg);
+    //PARK IMAGES
+    parkBG = p5.loadImage(parkBGImg);
+    parkStars = p5.loadImage(parkStarsImg);
+    lampostL = p5.loadImage(lampostLImg);
+    lampostM = p5.loadImage(lampostMImg);
+    lampostR = p5.loadImage(lampostRImg);
     //HOWL IMAGES
     bricks = p5.loadImage(bricksImg);
     disco = p5.loadImage(discoImg);
@@ -118,6 +129,12 @@ const Sketch = function(p5) {
       p5.pop();
     }
 
+    //////PARK DRAW
+    if (parkBoolean == true) {
+
+    }
+
+
     //////HOWL DRAW
     if (howlBoolean == true) {
       p5.push();
@@ -147,10 +164,9 @@ const Sketch = function(p5) {
     });
     $draftButton.click( function() {
       if (bgNum == 1) {
-        p5.background(250);
-        p5.image(parkBG, 0, 0, p5.windowWidth, p5.windowHeight);
-        bgNum += 1;
         restBoolean = false;
+        parkBoolean = true;
+        bgNum += 1;
       } else if (bgNum == 2) {
         p5.background(250);
         p5.image(cloudsBG, 0, 0, p5.windowWidth, p5.windowHeight);
