@@ -36,7 +36,7 @@ class Background {
         $bodyBg.css("background-image", `url(${sunBG})`);
         bgNum += 1;
       } else if (bgNum == 5) {
-        $bodyBg.removeClass('js-bg-show');
+        $bodyBg.css("background-image", "none");
       }
     });
   }
