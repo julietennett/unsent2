@@ -9,11 +9,14 @@
   background-color: $c-white;
   border-radius: 6px;
   box-shadow: 0 2px 24px $c-background--shadow;
-  transition: transform .3s ease;
+  opacity: 0;
+  transform: scale(.8);
 }
 
-.hide-email {
-  transform: translateY(100vh);
+.show-email {
+  opacity: 1;
+  transform: scale(1);
+  transition: all .5s ease;
 }
 
 

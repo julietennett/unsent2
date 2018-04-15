@@ -12,7 +12,7 @@ class Lander {
 
     $newEmail.click(function () {
       $lander.addClass('js-hide-lander');
-      $emailContainer.removeClass('hide-email');
+      $emailContainer.addClass('show-email');
     });
   }
 
