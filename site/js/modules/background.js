@@ -19,6 +19,10 @@ class Background {
 
     let $restLights = $('.rest__lights');
     let $restWall = $('.rest__wall');
+    let $fogL = $('.park__fog--left');
+    let $fogR = $('.park__fog--right');
+    let $lampostL = $('.lampost__left--container');
+    let $lampostR = $('.lampost__right--container');
 
     $newEmail.click(function () {
       $bodyBg.css("background-image", `url(${restBG})`);
@@ -32,6 +36,10 @@ class Background {
         $restLights.removeClass('js-show');
         $restWall.removeClass('js-show');
         $bodyBg.css("background-image", `url(${parkBG})`);
+        $fogL.addClass('js-show');
+        $fogR.addClass('js-show');
+        $lampostL.addClass('js-show');
+        $lampostR.addClass('js-show');
         bgNum += 1;
       } else if (bgNum == 2) {
         $bodyBg.css("background-image", `url(${cloudsBG})`);
