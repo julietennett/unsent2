@@ -24,6 +24,8 @@ class Background {
     let $lampostL = $('.lampost__left--container');
     let $lampostR = $('.lampost__right--container');
     let $cloudContainer = $('.cloud__container');
+    let $howlContainer = $('.howl__container');
+    let $sunContainer = $('.sun__container');
     let $img = $('img');
 
     $newEmail.click(function () {
@@ -52,10 +54,14 @@ class Background {
         $cloudContainer.children($img).addClass('js-show');
         bgNum += 1;
       } else if (bgNum == 3) {
+        $cloudContainer.children($img).removeClass('js-show');
         $bodyBg.css("background-image", `url(${howlBG})`);
+        $howlContainer.children($img).addClass('js-show');
         bgNum += 1;
       } else if (bgNum == 4) {
+        $howlContainer.children($img).removeClass('js-show');
         $bodyBg.css("background-image", `url(${sunBG})`);
+        $sunContainer.children($img).addClass('js-show');
         bgNum += 1;
       } else if (bgNum == 5) {
         $bodyBg.css("background-image", "none");

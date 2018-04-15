@@ -145,6 +145,60 @@
   transition: all .3s ease;
 }
 
+.howl__container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.howl-light-left {
+  transform: translateX(-100%);
+  transition: all .3s ease;
+}
+
+.howl-disco {
+  height: 150px;
+  transform: translateY(-100%);
+  transition: all .3s ease;
+}
+
+.howl-light-right {
+  transform: translateX(100%);
+  transition: all .3s ease;
+}
+
+.sun__container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  & > * {
+    position: absolute;
+  }
+}
+
+.sun-cloud-left {
+  margin-top: 100px;
+  transform: translateX(-100%);
+  transition: all .3s ease;
+}
+
+.sun-cloud-right {
+  right: 0;
+  margin-top: 20px;
+  transform: translateX(100%);
+  transition: all .3s ease;
+}
+
+.sun-cloud-bottom {
+  bottom: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: all .3s ease;
+}
+
 .js-show {
   transform: translateX(0);
   transition: transform .75s ease;
