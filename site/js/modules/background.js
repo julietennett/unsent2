@@ -17,12 +17,8 @@ class Background {
     let $bodyBg = $('.body__bg');
     let bgNum = 0;
 
-    let $restLights = $('.rest__lights');
-    let $restWall = $('.rest__wall');
-    let $fogL = $('.park__fog--left');
-    let $fogR = $('.park__fog--right');
-    let $lampostL = $('.lampost__left--container');
-    let $lampostR = $('.lampost__right--container');
+    let $restContainer = $('.restaurant__container')
+    let $parkContainer = $('.park__container');
     let $cloudContainer = $('.cloud__container');
     let $howlContainer = $('.howl__container');
     let $sunContainer = $('.sun__container');
@@ -31,25 +27,17 @@ class Background {
     $newEmail.click(function () {
       $bodyBg.css("background-image", `url(${restBG})`);
       $bodyBg.addClass('js-bg-show');
-      $restLights.addClass('js-show');
-      $restWall.addClass('js-show');
+      $restContainer.children($img).addClass('js-show');
       bgNum += 1;
     });
     $draftButton.click( function() {
       if (bgNum == 1) {
-        $restLights.removeClass('js-show');
-        $restWall.removeClass('js-show');
+        $restContainer.children($img).removeClass('js-show');
         $bodyBg.css("background-image", `url(${parkBG})`);
-        $fogL.addClass('js-show');
-        $fogR.addClass('js-show');
-        $lampostL.addClass('js-show');
-        $lampostR.addClass('js-show');
+        $parkContainer.children($img).addClass('js-show');
         bgNum += 1;
       } else if (bgNum == 2) {
-        $fogL.removeClass('js-show');
-        $fogR.removeClass('js-show');
-        $lampostL.removeClass('js-show');
-        $lampostR.removeClass('js-show');
+        $parkContainer.children($img).removeClass('js-show');
         $bodyBg.css("background-image", `url(${cloudsBG})`);
         $cloudContainer.children($img).addClass('js-show');
         bgNum += 1;
@@ -64,6 +52,7 @@ class Background {
         $sunContainer.children($img).addClass('js-show');
         bgNum += 1;
       } else if (bgNum == 5) {
+        $sunContainer.children($img).removeClass('js-show');
         $bodyBg.css("background-image", "none");
       }
     });
