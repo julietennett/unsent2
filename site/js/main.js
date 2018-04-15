@@ -5,6 +5,7 @@ import HoverMessage from "./modules/hover-message";
 import Draft from "./modules/draft";
 import Lander from "./modules/lander";
 import Background from "./modules/background";
+import About from "./modules/about";
 
 $(document).ready(function() {
   new NextEmail();
@@ -12,4 +13,5 @@ $(document).ready(function() {
   new Draft();
   new Lander();
   new Background();
+  new About();
 });
