@@ -17,9 +17,14 @@ class Background {
     let $bodyBg = $('.body__bg');
     let bgNum = 0;
 
+    let $restLights = $('.rest__lights');
+    let $restWall = $('.rest__wall');
+
     $newEmail.click(function () {
       $bodyBg.css("background-image", `url(${restBG})`);
       $bodyBg.addClass('js-bg-show');
+      $restLights.addClass('js-show');
+      $restWall.addClass('js-show');
       bgNum += 1;
     });
     $draftButton.click( function() {

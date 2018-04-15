@@ -1,0 +1,30 @@
+.backgrounds__container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.restaurant__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.rest__lights {
+  width: 100%;
+  height: auto;
+  transform: translateX(-100%);
+}
+
+.rest__wall {
+  width: 100%;
+  transform: translateX(100%);
+  height: auto;
+}
+
+.js-show {
+  transform: translateX(0);
+  transition: transform .75s ease;
+}

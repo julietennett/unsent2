@@ -1,6 +1,8 @@
 
 .email__container {
   display: flex;
+  position: relative;
+  z-index: 1000;
   flex-direction: column;
   width: 53vw;
   height: 65vh;
