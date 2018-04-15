@@ -10,12 +10,10 @@
   border-radius: 6px;
   box-shadow: 0 2px 24px $c-background--shadow;
   opacity: 0;
-  transform: scale(.8);
 }
 
 .show-email {
   opacity: 1;
-  transform: scale(1);
   transition: all .5s ease;
 }
 
