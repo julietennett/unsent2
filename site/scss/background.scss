@@ -89,6 +89,62 @@
   height: 185px;
 }
 
+.cloud__container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  & > * {
+    position: absolute;
+  }
+}
+
+.cloud-top-left {
+  transform: translateX(-100%);
+  transition: all .3s ease;
+}
+
+.cloud-top-right {
+  right: 0;
+  transform: translateX(100%);
+  transition: all .3s ease;
+}
+
+.cloud-mid-left {
+  left: 0;
+  top: 50vh;
+  transform: translateX(-100%);
+  transition: all .3s ease;
+}
+
+.cloud-mid-right {
+  right: 0;
+  top: 50vh;
+  padding-right: 10%;
+  transform: translateX(100%);
+  transition: all .3s ease;
+}
+
+.cloud-bottom-left {
+  bottom: 0;
+  transform: translateX(-100%);
+  transition: all .3s ease;
+}
+
+.cloud-bottom-right {
+  bottom: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: all .3s ease;
+}
+
+.cloud-sidewalk {
+  width: 100vw;
+  bottom: 0;
+  transform: translateX(-100%);
+  transition: all .3s ease;
+}
+
 .js-show {
   transform: translateX(0);
   transition: transform .75s ease;
