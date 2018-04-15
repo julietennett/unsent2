@@ -32,10 +32,10 @@ class Background {
       if (bgNum == 1) {
         $restContainer.children($img).removeClass('js-show');
         $body.css("background-image", `url(${parkBG})`);
-        $parkContainer.children($img).addClass('js-show');
+        $parkContainer.find('*').addClass('js-show');
         bgNum += 1;
       } else if (bgNum == 2) {
-        $parkContainer.children($img).removeClass('js-show');
+        $parkContainer.find('*').removeClass('js-show');
         $body.css("background-image", `url(${cloudsBG})`);
         $cloudContainer.children($img).addClass('js-show');
         bgNum += 1;
