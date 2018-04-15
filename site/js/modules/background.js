@@ -29,6 +29,8 @@ class Background {
     });
     $draftButton.click( function() {
       if (bgNum == 1) {
+        $restLights.removeClass('js-show');
+        $restWall.removeClass('js-show');
         $bodyBg.css("background-image", `url(${parkBG})`);
         bgNum += 1;
       } else if (bgNum == 2) {
