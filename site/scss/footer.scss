@@ -12,8 +12,15 @@
 
 .credit {
   color: #807380;
+  &.js-white {
+    color: $c-white;
+  }
 }
 
 .about {
   cursor: pointer;
+  &.js-white {
+    color: $c-white;
+    border-bottom: 1px solid $c-white;
+  }
 }

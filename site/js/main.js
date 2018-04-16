@@ -6,6 +6,7 @@ import Draft from "./modules/draft";
 import Lander from "./modules/lander";
 import Background from "./modules/background";
 import About from "./modules/about";
+import Footer from "./modules/footer";
 
 $(document).ready(function() {
   new NextEmail();
@@ -14,4 +15,5 @@ $(document).ready(function() {
   new Lander();
   new Background();
   new About();
+  new Footer();
 });
