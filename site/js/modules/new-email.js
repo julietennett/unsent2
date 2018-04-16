@@ -15,7 +15,8 @@ class NextEmail {
     let $draftButtons = $('.drafts__container')
     var instance = new TypeIt(emailTextContainer, {
       speed: 25,
-      startDelay: 2500
+      startDelay: 2500,
+      cursorSpeed: 850,
     });
     let emailNum = 1;
 
@@ -26,27 +27,19 @@ class NextEmail {
           .pause(800)
           .type('I may have avoided eye contact as best as I could, allowing my eyes to dart away from yours, hands wringing in my lap away from your line of sight, mind racing and blank all at the same time. ')
           .pause(800)
-          .type('But I was there, sitting across from you in the crowded restaurant as our waiter interupted the hesitant conversation developing between us. My hair was cut short and it\'s a different color than you saw last. You told me you didn\'t recognize it. ')
+          .type('But I was there, sitting across from you. My hair was cut short and it\'s a different color than you saw last. You told me you didn\'t recognize it. ')
           .pause(1000)
-          .type('You see, I\'m new now. A new person. I\'m not who you used to know. Can\t you tell by my hair? ')
+          .type('You see, I\'m new now. A new person. I\'m not who you used to know. Can\'t you tell by my hair? ')
           .pause(1000)
           .break()
           .break()
           .type('So it was you and the New Me, we placed our orders, and we no longer had menus to stare at with just a little too much intensity. So you started talking again, and suddenly we were laughing. ')
           .pause(800)
-          .type('I could hear myself laughing. ')
-          .pause(800)
-          .type('It was a sound I recognized, a familiar feeling in my gut that I hadn\'t felt in so many months. And suddenly I could see myself again, through all of the doors I pulled shut between us. ')
+          .type('It was a sound I recognized, a familiar feeling in my gut that I hadn\'t felt in so many months. And suddenly I could see myself again through all of the doors I pulled shut between us. ')
           .pause(1000)
           .break()
           .break()
-          .type('When I am with you, I am myself. It\'s always been that way, but I don\'t think you knew that. ')
-          .pause(800)
-          .type('I don\'t think you knew that every time you looked at me, laughed with me, prompted me, I felt myself growing more and more familiar. ')
-          .pause(1000)
-          .break()
-          .break()
-          .type('And then our plates arrived, and our food dwindled, and nothing was left but to call the check. I didn\'t want to go. ')
+          .type('Our plates arrived, our food dwindled, and nothing was left but to call the check. I didn\'t want to go. ')
           .pause(800)
           .type('When dinner was over, you walked away in the middle of a sentence. And now I have to go back to being the New Me again.' )
           .pause(1000)
@@ -74,7 +67,10 @@ class NextEmail {
           .type('The last time we were in that park together, it was summertime. We laid in the grass, allowing the sunshine to hit our faces until we both had sunburns. ')
           .pause(800)
           .type('I wrote about it in my journal that night and I said I could\'ve lived in that moment forever. ')
-          .pause(1000);
+          .pause(1000)
+          .break()
+          .break()
+          .type('I looked over again and you and your friends had moved further into the crowd, out of my sight. ');
       } else if (emailNum == 2) {
         instance.type('I saw you ride by me on a bike I\'ve never seen before. I had to squint to tell if it was you, but you looked away before I could figure it out. ')
           .pause(800)
@@ -98,7 +94,11 @@ class NextEmail {
           .pause(800)
           .type('It\'s been one year since I told you I stopped drinking coffee. But you remembered that afternoon conversation. And you didn\'t realized I went on that melodramatic anti-coffee rant knowing I would only last in my coffee abstention for maybe a month. But you weren\'t around a month later to find out. You thought I was more dedicated to the coffeeless cause. ')
           .pause(800)
-          .type('And you remembered.');
+          .type('And you remembered.')
+          .break()
+          .break()
+          .pause(1000)
+          .type('Just so you know, I drink coffee again.');
       } else if (emailNum == 5) {
         $draftButtons.removeClass('hide-drafts');
         instance.type('\"I\'m over it\", you know. ')
