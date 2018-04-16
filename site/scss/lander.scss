@@ -1,13 +1,22 @@
 .lander__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
-  margin-left: 10%;
-  width: 100%;
-  display: block;
+  margin: 10%;
+  max-width: 100%;
+  height: 100vh;
   transition: all .3s ease;
   z-index: 10000;
+  @media (min-width: $bp-desktop) {
+    justify-content: flex-start;
+    width: 100%;
+    width: 100%;
+  }
 }
 
 .new-email-button {
+  display: none;
   background-color: $c-buttons;
   padding: 15px 40px;
   border-radius: 5px;
@@ -16,11 +25,31 @@
   font-size: 10pt;
   transition: all .3s ease;
   cursor: pointer;
+  @media (min-width: $bp-desktop) {
+    display: block;
+  }
 }
 
 .new-email-button:hover {
   transform: translateY(-3px);
   box-shadow: 0 2px 12px #CAC2D1;
+}
+
+.lander__disclaimer {
+  color: $c-purple-text;
+  @media (min-width: $bp-desktop) {
+    display: none;
+  }
+}
+
+.lander__arrow {
+  margin: 50px 0 0 0;
+  height: 60px;
+  width: 26px;
+  align-self: center;
+  @media (min-width: $bp-desktop) {
+    display: none;
+  }
 }
 
 .js-hide-lander {

@@ -30,6 +30,7 @@ body {
   display: flex;
   flex-direction: column;
   background-size: cover;
+  overflow: scroll;
 }
 
 .js-bg-show {
@@ -38,11 +39,14 @@ body {
 }
 
 .content__container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @media (min-width: $bp-desktop) {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 *, :after, :before {
@@ -134,7 +138,16 @@ ul {
 h1 {
   font-weight: 500;
   color: $c-purple-text;
-  font-size: 40px;
+  font-size: 28pt;
+  @media (min-width: $bp-desktop) {
+    font-size: 40px;
+  }
+}
+
+h2 {
+  font-weight: 500;
+  color: $c-purple-text;
+  font-size: 12pt;
 }
 
 h3 {

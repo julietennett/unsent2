@@ -1,7 +1,10 @@
 .backgrounds__container {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
+  display: none;
+  @media (min-width: $bp-desktop) {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  }
 }
 
 .restaurant__container {

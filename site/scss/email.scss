@@ -4,8 +4,8 @@
   position: relative;
   z-index: 1000;
   flex-direction: column;
-  width: 53vw;
-  height: 70vh;
+  width: 0;
+  height: 0;
   background-color: $c-white;
   border-radius: 6px;
   box-shadow: 0 2px 24px $c-background--shadow;
@@ -14,7 +14,9 @@
 
 .show-email {
   opacity: 1;
-  transition: all .5s ease;
+  transition: opacity .5s ease;
+  width: 53vw;
+  height: 70vh;
 }
 
 

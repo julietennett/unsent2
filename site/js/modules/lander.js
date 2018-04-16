@@ -14,7 +14,6 @@ class Lander {
     $newEmail.click(function () {
       $lander.addClass('js-hide-lander');
       $body.removeClass('js-lander');
-      $body.addClass('js-email');
       $emailContainer.addClass('show-email');
     });
   }
