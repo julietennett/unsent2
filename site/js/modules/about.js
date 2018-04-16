@@ -9,6 +9,7 @@ class About {
     let $aboutContainer = $('.about__container');
     let $aboutLink = $('.about');
     let navOpen = false;
+    let $footer = $('.footer');
     //HIDE WHAT'S ON THE PAGE
     let $body = $('body');
     let $lander = $('.lander__container');
@@ -17,6 +18,7 @@ class About {
     $aboutLink.click(function () {
       $aboutContainer.toggleClass('js-about-show');
       if (navOpen == false) {
+        $footer.children('*').addClass('js-about-color');
         $aboutLink.text('CLOSE');
         navOpen = true;
         if ($body.hasClass('js-lander')) {
@@ -25,6 +27,7 @@ class About {
           $emailContainer.removeClass('show-email');
         }
       } else if (navOpen == true) {
+        $footer.children('*').removeClass('js-about-color');
         $aboutLink.text('ABOUT THIS PROJECT');
         navOpen = false;
         if ($body.hasClass('js-lander')) {

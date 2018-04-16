@@ -15,6 +15,9 @@
   &.js-white {
     color: $c-white;
   }
+  &.js-about-color {
+    color: $c-about-text;
+  }
 }
 
 .about {
@@ -22,5 +25,9 @@
   &.js-white {
     color: $c-white;
     border-bottom: 1px solid $c-white;
+  }
+  &.js-about-color {
+    color: $c-about-text;
+    border-bottom: 1px solid $c-about-text;
   }
 }
