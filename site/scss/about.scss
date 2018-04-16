@@ -11,6 +11,11 @@
   color: $c-about-text;
   opacity: 0;
   transition: all .5s ease;
+  a {
+    color: $c-about-text;
+    border-bottom: solid 1px $c-about-text;
+    cursor: pointer;
+  }
 }
 
 .about__text {
