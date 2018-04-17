@@ -1,15 +1,17 @@
-
 .email__container {
-  display: flex;
-  position: relative;
-  z-index: 1000;
-  flex-direction: column;
-  width: 0;
-  height: 0;
-  background-color: $c-white;
-  border-radius: 6px;
-  box-shadow: 0 2px 24px $c-background--shadow;
-  opacity: 0;
+  display: none;
+  @media (min-width: $bp-desktop) {
+    display: flex;
+    position: relative;
+    z-index: 1000;
+    flex-direction: column;
+    width: 0;
+    height: 0;
+    background-color: $c-white;
+    border-radius: 6px;
+    box-shadow: 0 2px 24px $c-background--shadow;
+    opacity: 0;
+  }
 }
 
 .show-email {

@@ -1,15 +1,18 @@
 .drafts__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 65px 20px;
-  height: 100vh;
-  transform: translateX(0);
-  transition: transform .3s ease;
+  display: none;
+  @media (min-width: $bp-desktop) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 65px 20px;
+    height: 100vh;
+    transform: translateX(0);
+    transition: transform .3s ease;
+  }
 }
 
 .hide-drafts {
