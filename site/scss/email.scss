@@ -21,7 +21,7 @@
   height: 70vh;
   @media (min-width: $bp-desktop) {
     width: 55vw;
-    height: 70vh;
+    height: 525px;
   }
 }
 
@@ -33,15 +33,15 @@
   flex-direction: row;
   align-items: center;
   width: 100%;
-  height: 5%;
+  height: 30px;
   border-radius: 6px 6px 0 0;
   background-color: $c-browser-bar;
 }
 
 .circle {
   margin: 4px;
-  width: 2%;
-  height: 80%;
+  width: 15px;
+  height: 15px;
   border-radius: 100px;
   &:first-child {
     margin-left: 14px
@@ -66,7 +66,7 @@
 
 .email-content__container {
   width: 50%;
-  height: 55%;
+  height: 350px;
 }
 
 .controls__container {
@@ -74,7 +74,7 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  height: 25%;
+  height: 120px;
   padding: 0 10px;
   background-color:$c-control-bar;
 }
@@ -91,7 +91,7 @@
 
 .controls__button {
   width: 90px;
-  height: 60%;
+  height: 60px;
   background-color: $c-buttons;
   border-radius: 7px;
   border: none;
@@ -151,7 +151,7 @@
 .email-text__container {
   display: flex;
   align-content: left;
-  height: 89%;
+  height: 370px;
   overflow: scroll;
   margin: 20px 0;
   padding: 0 5%;
