@@ -1,6 +1,6 @@
 .drafts__container {
   display: none;
-  @media (min-width: $bp-desktop) {
+  @media (min-width: $bp-laptop) {
     display: flex;
     flex-direction: column;
     align-items: center;

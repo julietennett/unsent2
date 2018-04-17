@@ -8,7 +8,7 @@
   height: 100vh;
   transition: all .3s ease;
   z-index: 10000;
-  @media (min-width: $bp-desktop) {
+  @media (min-width: $bp-laptop) {
     width: 50%;
     align-self: flex-start;
   }
@@ -16,7 +16,7 @@
 
 .new-email-button {
   display: none;
-  @media (min-width: $bp-desktop) {
+  @media (min-width: $bp-laptop) {
     display: block;
     padding: 15px 40px;
     width: 165px;
@@ -37,7 +37,7 @@
 
 .lander__disclaimer {
   color: $c-purple-text;
-  @media (min-width: $bp-desktop) {
+  @media (min-width: $bp-laptop) {
     display: none;
   }
 }
@@ -47,7 +47,7 @@
   height: 60px;
   width: 26px;
   align-self: center;
-  @media (min-width: $bp-desktop) {
+  @media (min-width: $bp-laptop) {
     display: none;
   }
 }

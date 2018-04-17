@@ -1,6 +1,6 @@
 .backgrounds__container {
   display: none;
-  @media (min-width: $bp-desktop) {
+  @media (min-width: $bp-laptop) {
     display: block;
     position: absolute;
     width: 100vw;

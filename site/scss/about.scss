@@ -21,7 +21,7 @@
 .about__text {
   margin: 0 10%;
   font-size: 16pt;
-  @media (min-width: $bp-desktop) {
+  @media (min-width: $bp-laptop) {
     width: 35vw;
   }
 }

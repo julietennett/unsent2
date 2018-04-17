@@ -1,6 +1,6 @@
 .mobile__email--container {
   padding: 0 10%;
-  @media (min-width: $bp-desktop) {
+  @media (min-width: $bp-laptop) {
     display: none;
   }
 }
