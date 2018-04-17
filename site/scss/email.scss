@@ -107,7 +107,7 @@
 
 .draft-button {
   cursor: pointer;
-  transition: all .3s ease;
+  transition: all .3s $ease-in-out-quad;
 }
 
 .draft-button__hover:hover {

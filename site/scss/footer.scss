@@ -17,7 +17,7 @@
 .about {
   width: fit-content;
   cursor: pointer;
-  transition: all .3s ease;
+  transition: all .3s $ease-in-out-quad;
   &.js-white {
     color: $c-white;
     border-bottom: 1px solid $c-white;

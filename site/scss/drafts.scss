@@ -27,6 +27,10 @@
   width: 50%;
   height: auto;
   cursor: pointer;
+  transition: all .3s $ease-in-out-quad;
+  &:hover {
+    transform: translateY(-3px);
+  }
 }
 
 .email1 {

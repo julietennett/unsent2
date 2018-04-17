@@ -21,14 +21,14 @@
   width: 100%;
   height: auto;
   transform: translateX(-100%);
-  transition: transform .75s ease;
+  transition: transform .75s $ease-out-quint;
 }
 
 .rest__wall {
   width: 100%;
   transform: translateX(100%);
   height: auto;
-  transition: transform .75s ease;
+  transition: transform .75s $ease-out-quint;
 }
 
 .park__container {
@@ -47,7 +47,7 @@
 .park__fog--left {
   left: 0;
   transform: translateX(-100%);
-  transition: all .3s ease;
+  transition: all .3s $ease-out-quint;
   margin-top: 20px;
 }
 
@@ -56,7 +56,7 @@
   right: 0;
   bottom: 0;
   transform: translateX(100%);
-  transition: all .3s ease;
+  transition: all .3s $ease-out-quint;
 }
 
 .lampost__container {
@@ -71,7 +71,7 @@
 .lampost__left--container {
   padding: 0 75px;
   transform: translateX(-100%);
-  transition: all .3s ease;
+  transition: all .3s $ease-out-quint;
 }
 
 .lampost__right--container {
@@ -79,7 +79,7 @@
   align-items: flex-end;
   padding: 0 100px;
   transform: translateX(100%);
-  transition: all .3s ease;
+  transition: all .3s $ease-out-quint;
 }
 
 .park__lampost--left {
@@ -106,20 +106,20 @@
 
 .cloud-top-left {
   transform: translateX(-100%);
-  transition: all .3s ease;
+  transition: all .3s $ease-out-quint;
 }
 
 .cloud-top-right {
   right: 0;
   transform: translateX(100%);
-  transition: all .3s ease;
+  transition: all .3s $ease-out-quint;
 }
 
 .cloud-mid-left {
   left: 0;
   top: 50vh;
   transform: translateX(-100%);
-  transition: all .3s ease;
+  transition: all .3s $ease-out-quint;
 }
 
 .cloud-mid-right {
@@ -127,27 +127,27 @@
   top: 50vh;
   padding-right: 10%;
   transform: translateX(100%);
-  transition: all .3s ease;
+  transition: all .3s $ease-out-quint;
 }
 
 .cloud-bottom-left {
   bottom: 0;
   transform: translateX(-100%);
-  transition: all .3s ease;
+  transition: all .3s $ease-out-quint;
 }
 
 .cloud-bottom-right {
   bottom: 0;
   right: 0;
   transform: translateX(100%);
-  transition: all .3s ease;
+  transition: all .3s $ease-out-quint;
 }
 
 .cloud-sidewalk {
   width: 100vw;
   bottom: 0;
   transform: translateX(-100%);
-  transition: all .3s ease;
+  transition: all .3s $ease-out-quint;
 }
 
 .howl__container {
@@ -160,18 +160,18 @@
 
 .howl-light-left {
   transform: translateX(-150%);
-  transition: all .3s ease;
+  transition: all .3s $ease-out-quint;
 }
 
 .howl-disco {
   height: 150px;
   transform: translateY(-100%);
-  transition: all .3s ease;
+  transition: all .3s $ease-out-quint;
 }
 
 .howl-light-right {
   transform: translateX(150%);
-  transition: all .3s ease;
+  transition: all .3s $ease-out-quint;
 }
 
 .sun__container {
@@ -187,24 +187,24 @@
 .sun-cloud-left {
   margin-top: 100px;
   transform: translateX(-100%);
-  transition: all .3s ease;
+  transition: all .3s $ease-out-quint;
 }
 
 .sun-cloud-right {
   right: 0;
   margin-top: 20px;
   transform: translateX(100%);
-  transition: all .3s ease;
+  transition: all .3s $ease-out-quint;
 }
 
 .sun-cloud-bottom {
   bottom: 0;
   right: 0;
   transform: translateX(100%);
-  transition: all .3s ease;
+  transition: all .3s $ease-out-quint;
 }
 
 .js-show {
   transform: translateX(0);
-  transition: transform .75s ease;
+  transition: transform .75s $ease-out-quint;
 }
