@@ -9,24 +9,24 @@
   transition: all .3s ease;
   z-index: 10000;
   @media (min-width: $bp-desktop) {
-    justify-content: flex-start;
-    width: 100%;
-    width: 100%;
+    width: 50%;
+    align-self: flex-start;
   }
 }
 
 .new-email-button {
   display: none;
-  background-color: $c-buttons;
-  padding: 15px 40px;
-  border-radius: 5px;
-  color: $c-white;
-  font-weight: 700;
-  font-size: 10pt;
-  transition: all .3s ease;
-  cursor: pointer;
   @media (min-width: $bp-desktop) {
     display: block;
+    padding: 15px 40px;
+    width: 165px;
+    background-color: $c-buttons;
+    border-radius: 5px;
+    color: $c-white;
+    font-weight: 700;
+    font-size: 10pt;
+    transition: all .3s ease;
+    cursor: pointer;
   }
 }
 

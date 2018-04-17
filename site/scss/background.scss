@@ -1,6 +1,7 @@
 .backgrounds__container {
   display: none;
   @media (min-width: $bp-desktop) {
+    display: block;
     position: absolute;
     width: 100vw;
     height: 100vh;
