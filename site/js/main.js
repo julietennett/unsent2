@@ -16,4 +16,5 @@ $(document).ready(function() {
   new Background();
   new About();
   new Footer();
+  let $body = $('body');
 });

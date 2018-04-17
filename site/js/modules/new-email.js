@@ -19,6 +19,7 @@ class NextEmail {
       cursorSpeed: 850,
     });
     let emailNum = 1;
+    let $body = $('body');
 
     $newEmail.click(function () {
       if (emailNum == 1) {

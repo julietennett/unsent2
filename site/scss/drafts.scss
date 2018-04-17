@@ -12,6 +12,10 @@
     height: 100vh;
     transform: translateX(0);
     transition: transform .3s ease;
+    z-index: 1000;
+  }
+  &.hide-drafts {
+    display: none;
   }
 }
 

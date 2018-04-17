@@ -14,6 +14,7 @@ class About {
     let $body = $('body');
     let $lander = $('.lander__container');
     let $emailContainer = $('.email__container');
+    let $draftsContainer = $('.drafts__container');
 
     $aboutLink.click(function () {
       $aboutContainer.toggleClass('js-about-show');
@@ -25,6 +26,7 @@ class About {
           $lander.addClass('js-hide-lander');
         } else {
           $emailContainer.removeClass('show-email');
+          $draftsContainer.css('display', 'none');
         }
       } else if (navOpen == true) {
         $footer.children('*').removeClass('js-about-color');
@@ -34,6 +36,7 @@ class About {
           $lander.removeClass('js-hide-lander');
         } else {
           $emailContainer.addClass('show-email');
+          $draftsContainer.css('display', 'flex');
         }
       }
     });
