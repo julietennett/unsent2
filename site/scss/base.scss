@@ -21,7 +21,6 @@ body {
   text-rendering: optimizeSpeed;
   margin:0;
   padding:0;
-  overflow: hidden;
   background-color: $c-background;
   font-family: $f-rubik;
   font-weight: $fw-light;
@@ -31,6 +30,9 @@ body {
   flex-direction: column;
   background-size: cover;
   overflow: scroll;
+  @media (min-width: $bp-desktop) {
+    overflow: hidden;
+  }
 }
 
 .js-bg-show {
