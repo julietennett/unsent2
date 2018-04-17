@@ -19,16 +19,18 @@
 }
 
 .about__text {
-  margin: 0 10%;
-  font-size: 16pt;
+  font-family: $f-noto;
+  font-size: 14pt;
+  width: 75vw;
   @media (min-width: $bp-laptop) {
+    font-size: 16pt;
     width: 35vw;
   }
 }
 
 .about__credit {
   margin-top: 40px;
-  font-size: 12pt;
+  font-size: 10pt;
 }
 
 .js-about-show {
