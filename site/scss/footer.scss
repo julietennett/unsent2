@@ -17,6 +17,7 @@
 .about {
   width: fit-content;
   cursor: pointer;
+  transition: all .3s ease;
   &.js-white {
     color: $c-white;
     border-bottom: 1px solid $c-white;
@@ -24,6 +25,9 @@
   &.js-about-color {
     color: $c-about-text;
     border-bottom: 1px solid $c-about-text;
+  }
+  &:hover {
+    transform: translateY(-3px);
   }
 }
 

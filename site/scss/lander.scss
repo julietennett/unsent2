@@ -28,11 +28,10 @@
     transition: all .3s ease;
     cursor: pointer;
   }
-}
-
-.new-email-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 2px 12px #CAC2D1;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 2px 12px #CAC2D1;
+  }
 }
 
 .lander__disclaimer {

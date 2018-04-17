@@ -69,6 +69,8 @@ class HoverMessage {
       } else {
         $draftMsg.text(draftMsgText[5]);
         $draftButton.css('cursor', 'not-allowed');
+        $draftButton.removeClass('draft-button__hover');
+
       }
     });
   }

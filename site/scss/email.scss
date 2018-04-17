@@ -107,6 +107,12 @@
 
 .draft-button {
   cursor: pointer;
+  transition: all .3s ease;
+}
+
+.draft-button__hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 2px 12px #CAC2D1;
 }
 
 .send-button {
@@ -120,6 +126,7 @@
   color: $c-buttons;
   box-shadow: 0 2px 20px #847C89;
   font-size: 10pt;
+  z-index: 10000;
 }
 
 .js-hide {
