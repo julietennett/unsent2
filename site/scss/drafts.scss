@@ -11,11 +11,8 @@
     padding: 65px 20px;
     height: 100vh;
     transform: translateX(0);
-    transition: transform .3s ease;
+    transition: transform .3s $ease-out-quint;
     z-index: 1000;
-  }
-  &.hide-drafts {
-    display: none;
   }
 }
 
