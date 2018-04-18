@@ -147,7 +147,7 @@ class NextEmail {
           .pause(300)
           .type('you insisted you needed me next to you. ')
           .pause(500)
-          .type('You didn\'t stop until I crossed the livingroom and took a seat beside you. ')
+          .type('You didn\'t stop until I crossed the living room and took a seat beside you. ')
           .pause(800)
           .type('I was the only thing you needed, you said. ')
           .pause(500)
