@@ -90,12 +90,12 @@
 }
 
 .controls__button {
-  width: 90px;
+  width: 50%;
   height: 60px;
   background-color: $c-buttons;
   border-radius: 7px;
   border: none;
-  box-shadow: 0 2px 7px 0 $c-buttons--shadow;
+  box-shadow: 0 2px 10px 0 $c-buttons--shadow;
   color: $c-white;
   font-size: 10pt;
   font-weight: $fw-bold;
@@ -139,9 +139,12 @@
   flex-direction: column;
   justify-content: space-around;
   margin: 7px 0;
+  width: 70%
 }
 
 .controls__input {
+  height: 36px;
+  overflow: hidden;
   background-color: $c-white;
   padding: 10px;
   border-radius: 5px;
@@ -150,6 +153,8 @@
 
 .controls__input--text {
   font-size: 10pt;
+  height: 17px;
+  overflow: hidden;
 }
 
 
